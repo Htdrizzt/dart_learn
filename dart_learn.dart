@@ -1,8 +1,8 @@
 void main() {
   int x = 5;
   String name = 'yaser';
-  var y= 7;
-  print(x*y);
+  var y = 7;
+  print(x * y);
   var firstName = '$name $y';
   print(firstName);
   print(x.toString() + ' ' + name);
@@ -17,4 +17,14 @@ void main() {
 
   bool isFavourite = true;
   bool isLoaded = false;
+
+  if (isFavourite) {
+    print('true gelir');
+  } else {
+    print('false gelir');
+  }
+  isLoaded ? print('Shortdur') : print('kısadegildir') ;
+  var yukle = isLoaded ? 'Shortdur' : 'kısadegildir';
+
+  print(yukle);
 }
