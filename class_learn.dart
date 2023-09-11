@@ -1,28 +1,30 @@
 void main() {
-  var kopek = animals('köpek');
-  kopek.speak();
-  var cat = dogs('cat',age: 16);
+  animals cat = dogs('cat', 16, 'ehe',);
+  animals cat2 = dogs('cat2', 16, 'eyeye',toy: "lego");
+  cat2.speak();
   cat.speak();
 }
 
+
+
 class animals {
-  String? name;
+  String? name; //instance variables
+  int? age; //instance variables
+  String _name2 = "alex"; //instance variables
+  String? toy;
 
-  int? age ;
+  animals(this.name, this.age, this._name2 , {this.toy= 'top'});
 
-  animals(this.name, {this.age = 13});
-
-  void speak() {
-    print('woof $name $age');
+  void speak() // class methods
+  {
+    print('woof $name $age $_name2 $toy');
   }
 }
 
 class dogs extends animals {
-  dogs(
-    super.name,{super.age = 14}
-  );
+  dogs(super.name, super.age, super.name2,{super.toy});
 
   void speak() {
-    print('woof woof $name $age');
+    print('woof woof $name $age $_name2 $toy');
   }
 }

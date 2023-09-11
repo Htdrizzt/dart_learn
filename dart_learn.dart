@@ -7,6 +7,9 @@ void main() {
   print(firstName);
   print(x.toString() + ' ' + name);
   print('Merhaba $name');
+// ignore: unused_local_variable
+final name2 = 'faruk';
+
 
   var nameList = ["yaser", "ahmet", "mehmet", "ali"];
   print(nameList);
@@ -20,10 +23,13 @@ void main() {
 
   if (isFavourite) {
     print('true gelir');
+  // ignore: dead_code
   } else {
     print('false gelir');
   }
+  // ignore: dead_code
   isLoaded ? print('Shortdur') : print('kısadegildir') ;
+  // ignore: dead_code
   var yukle = isLoaded ? 'Shortdur' : 'kısadegildir';
 
   print(yukle);
