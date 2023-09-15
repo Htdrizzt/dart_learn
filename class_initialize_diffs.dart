@@ -1,3 +1,5 @@
+// ignore_for_file: unused_field, unused_local_variable
+
 class model4 {
   String? userId;
   int? id;
@@ -62,7 +64,8 @@ class model8 {
       : _userId=userId,
         _id=id,
         _title=title,
-        _content=title,}
+        _content=title;
+}
 
 class model9 {
   late final String _userId;
@@ -90,3 +93,4 @@ class model7 {
   //named parametre alır
   model7(
       {required this.userId, required this.id, required this.title, required this.content});
+}
